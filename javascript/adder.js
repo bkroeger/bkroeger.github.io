@@ -30,11 +30,6 @@ window.controller = {
 window.model = {
 
     add: function(number){
-	    var answer = 0;
-	    for(i=1; i<=number; i++){
-		    answer += i;
-		}
-		return answer;
-	}
+	return number > 0 ? number * (number + 1) / 2 : 0;
 }
 
