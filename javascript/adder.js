@@ -31,5 +31,6 @@ window.model = {
 
     add: function(number){
 	return number > 0 ? number * (number + 1) / 2 : 0;
+    }
 }
 
