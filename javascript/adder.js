@@ -16,7 +16,7 @@ window.controller = {
 
 	addButton: function(){
 	  var input = $('#addInput');
-	  var number = input.val();
+	  var number = parseInt(input.val());
 	  if(number < 1){
 	     input.parent('div').addClass('has-error');
 	  }else{
