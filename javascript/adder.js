@@ -24,7 +24,7 @@ window.controller = {
   addButton: function(){
     var input = $('#addInput');
     var number = parseInt(input.val());
-    if(number < 1){
+    if(isNaN(number) || number < 1){
       view.addErrorStyle(input);
     }else{
       view.removeErrorStyle(input);	  
